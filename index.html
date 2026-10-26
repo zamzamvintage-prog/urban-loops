@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Urban Loops | Wholesale Vintage & Embroidered Denim</title>
+
+<meta name="description"
+content="Wholesale baggy jeans, embroidered denim, Y2K clothing and reworked vintage apparel. Wholesale orders from 25 pieces.">
+
+<style>
+:root {
+  --black: #111111;
+  --white: #ffffff;
+  --muted: #777777;
+  --line: #e8e8e8;
+  --green: #20c968;
+  --bg: #f7f7f5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--white);
+  color: var(--black);
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+.announcement {
+  background: var(--black);
+  color: white;
+  text-align: center;
+  padding: 10px 15px;
+  font-size: 11px;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+}
+
+header {
+  height: 82px;
+  padding: 0 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 46px;
+  height: 46px;
+  border: 2px solid var(--black);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+.brand-name {
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.brand-sub {
+  color: var(--muted);
+  font-size: 9px;
+  letter-spacing: 2px;
+  margin-top: 3px;
+}
+
+nav {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+nav a:hover {
+  opacity: .55;
+}
+
+.nav-cta {
+  background: var(--black);
+  color: white;
+  padding: 13px 18px;
+}
+
+.hero {
+  min-height: 570px;
+  display: flex;
+  align-items: center;
+  padding: 75px 8%;
+  color: white;
+  background:
+    linear-gradient(90deg,
+      rgba(0,0,0,.92) 0%,
+      rgba(0,0,0,.72) 55%,
+      rgba(0,0,0,.15) 100%),
+    url("https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=1800&q=85")
+    center 45% / cover;
+}
+
+.hero-content {
+  max-width: 680px;
+}
+
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  font-weight: 700;
+}
+
+.hero h1 {
+  font-size: clamp(42px, 6.2vw, 76px);
+  line-height: 1.02;
+  letter-spacing: -3px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.hero h1 span {
+  color: #bfbfbf;
+}
+
+.hero p {
+  color: #dedede;
+  max-width: 510px;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 21px;
+  border: 1px solid white;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: .2s;
+}
+
+.btn-light {
+  background: white;
+  color: black;
+}
+
+.btn-light:hover {
+  background: #dedede;
+}
+
+.btn-outline {
+  color: white;
+}
+
+.btn-outline:hover {
+  background: white;
+  color: black;
+}
+
+.trust-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: 1px solid var(--line);
+}
+
+.trust-item {
+  padding: 23px 12px;
+  text-align: center;
+  border-right: 1px solid var(--line);
+}
+
+.trust-item strong {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .8px;
+}
+
+.trust-item span {
+  display: block;
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+section {
+  padding: 85px 7%;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 20px;
+  margin-bottom: 35px;
+}
+
+.section-heading h2 {
+  font-size: clamp(29px, 4vw, 43px);
+  letter-spacing: -1.5px;
+  text-transform: uppercase;
+}
+
+.section-heading p {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 8px;
+}
+
+.text-link {
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.category {
+  height: 310px;
+  position: relative;
+  overflow: hidden;
+  background: #ddd;
+  color: white;
+}
+
+.category img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .45s;
+}
+
+.category:hover img {
+  transform: scale(1.06);
+}
+
+.category::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(0,0,0,.8), transparent 70%);
+}
+
+.category-info {
+  position: absolute;
+  bottom: 23px;
+  left: 23px;
+  z-index: 1;
+}
+
+.category-info span {
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.category-info h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+.catalog {
+  background: var(--bg);
+}
+
+.filters {
+  display: flex;
+  gap: 9px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.filter-btn {
+  padding: 10px 16px;
+  border: 1px solid #d5d5d5;
+  background: white;
+  color: #222;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: black;
+  color: white;
+  border-color: black;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.product {
+  background: white;
+  min-width: 0;
+}
+
+.product-image {
+  aspect-ratio: 4 / 5;
+  position: relative;
+  background: #e9e9e7;
+  overflow: hidden;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .35s;
+}
+
+.product:hover .product-image img {
+  transform: scale(1.04);
+}
+
+.badge {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  padding: 7px 9px;
+  background: white;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .7px;
+}
+
+.product-info {
+  padding: 17px 14px;
+}
+
+.product-info h3 {
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.product-info p {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.product-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.price {
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.price small {
+  display: block;
+  font-size: 9px;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.order-btn {
+  background: black;
+  color: white;
+  padding: 10px 11px;
+  border: 0;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.order-btn:hover {
+  background: #333;
+}
+
+.empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 40px;
+  color: var(--muted);
+}
+
+.wholesale {
+  background: var(--black);
+  color: white;
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.wholesale h2 {
+  font-size: clamp(34px, 5vw, 55px);
+  line-height: 1.05;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+}
+
+.wholesale p {
+  color: #c9c9c9;
+  font-size: 14px;
+  line-height: 1.9;
+  margin-top: 20px;
+}
+
+.wholesale-points {
+  display: grid;
+  gap: 12px;
+}
+
+.point {
+  padding: 18px;
+  border: 1px solid #414141;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.point b {
+  font-size: 13px;
+}
+
+.point span {
+  display: block;
+  color: #bdbdbd;
+  font-size: 11px;
+  margin-top: 3px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.gallery-card {
+  min-height: 210px;
+  padding: 26px;
+  border: 1px solid var(--line);
+  background: var(--bg);
+}
+
+.gallery-card .icon {
+  font-size: 28px;
+  margin-bottom: 22px;
+}
+
+.gallery-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.gallery-card p {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.contact {
+  background: #efefec;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: clamp(32px, 5vw, 52px);
+  letter-spacing: -2px;
+  text-transform: uppercase;
+}
+
+.contact p {
+  color: #666;
+  max-width: 520px;
+  margin: 16px auto 26px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.whatsapp {
+  display: inline-flex;
+  background: var(--green);
+  color: #052d16;
+  padding: 16px 24px;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+footer {
+  padding: 45px 7% 25px;
+  background: black;
+  color: white;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+
+.footer-note {
+  color: #aaa;
+  font-size: 12px;
+  margin-top: 9px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 22px;
+  font-size: 11px;
+}
+
+.copyright {
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  color: #888;
+  font-size: 10px;
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 0 4%;
+  }
+
+  nav {
+    gap: 14px;
+  }
+
+  .products {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .categories {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .wholesale {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    height: 70px;
+  }
+
+  .logo {
+    width: 39px;
+    height: 39px;
+  }
+
+  .brand-name {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+  }
+
+  .brand-sub {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+
+  nav a:not(.nav-cta) {
+    display: none;
+  }
+
+  .nav-cta {
+    padding: 11px;
+    font-size: 10px;
+  }
+
+  .hero {
+    min-height: 540px;
+    padding: 55px 6%;
+    background-position: 58% center;
+  }
+
+  .hero h1 {
+    font-size: 46px;
+    letter-spacing: -2px;
+  }
+
+  .hero p {
+    font-size: 13px;
+  }
+
+  .trust-bar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .trust-item {
+    border-bottom: 1px solid var(--line);
+    padding: 17px 8px;
+  }
+
+  section {
+    padding: 60px 5%;
+  }
+
+  .section-heading {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .categories {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .category {
+    height: 220px;
+  }
+
+  .category-info {
+    bottom: 14px;
+    left: 13px;
+  }
+
+  .category-info h3 {
+    font-size: 17px;
+  }
+
+  .products {
+    gap: 11px;
+  }
+
+  .product-info {
+    padding: 12px 10px;
+  }
+
+  .product-info h3 {
+    font-size: 12px;
+  }
+
+  .product-bottom {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .order-btn {
+    width: 100%;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wholesale h2 {
+    font-size: 39px;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="announcement">
+  Wholesale Only · Minimum Order 25 Pieces · Worldwide Shipping
+</div>
+
+<header>
+  <a href="#home" class="brand" aria-label="Urban Loops home">
+    <div class="logo">UL</div>
+    <div>
+      <div class="brand-name">URBAN LOOPS</div>
+      <div class="brand-sub">ZAMZAM VINTAGE</div>
+    </div>
+  </a>
+
+  <nav>
+    <a href="#categories">Categories</a>
+    <a href="#catalog">Catalog</a>
+    <a href="#about">Wholesale</a>
+    <a href="#contact" class="nav-cta">Get Wholesale Price ↗</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="eyebrow">Wholesale Denim · Made in Pakistan</div>
+
+    <h1>
+      BAGGY HIP-HOP<br>
+      <span>EMBROIDERED</span><br>
+      DENIM.
+    </h1>
+
+    <p>
+      Premium embroidered jeans, statement shorts and reworked
+      streetwear made for resellers. Built for independent stores,
+      vintage shops and online fashion businesses.
+    </p>
+
+    <div class="hero-buttons">
+      <a class="btn btn-light" href="#catalog">View Wholesale Catalog ↗</a>
+      <a class="btn btn-outline" href="#contact">Request Pricing</a>
+    </div>
+  </div>
+</section>
+
+<div class="trust-bar">
+  <div class="trust-item">
+    <strong>MOQ 25 Pieces</strong>
+    <span>Reseller-friendly orders</span>
+  </div>
+  <div class="trust-item">
+    <strong>Made in Pakistan</strong>
+    <span>Production expertise</span>
+  </div>
+  <div class="trust-item">
+    <strong>Custom Designs</strong>
+    <span>Embroidery options</span>
+  </div>
+  <div class="trust-item">
+    <strong>Worldwide Shipping</strong>
+    <span>International wholesale</span>
+  </div>
+</div>
+
+<section id="categories">
+  <div class="section-heading">
+    <div>
+      <h2>Shop Categories</h2>
+      <p>Discover streetwear made for your next collection.</p>
+    </div>
+    <a href="#catalog" class="text-link">Explore Catalog ↗</a>
+  </div>
+
+  <div class="categories">
+    <a class="category" href="#catalog" data-category-link="jeans">
+      <img
+        src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=80"
+        alt="Denim jeans">
+      <div class="category-info">
+        <span>Wholesale Denim</span>
+        <h3>Baggy Jeans ↗</h3>
+      </div>
+    </a>
+
+    <a class="category" href="#catalog" data-category-link="embroidery">
+      <img
+        src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80"
+        alt="Streetwear denim fashion">
+      <div class="category-info">
+        <span>Statement Pieces</span>
+        <h3>Embroidery ↗</h3>
+      </div>
+    </a>
+
+    <a class="category" href="#catalog" data-category-link="shorts">
+      <img
+        src="https://images.unsplash.com/photo-1511196044526-5cb3bcb7071b?auto=format&fit=crop&w=800&q=80"
+        alt="Casual streetwear">
+      <div class="category-info">
+        <span>Summer Collection</span>
+        <h3>Baggy Shorts ↗</h3>
+      </div>
+    </a>
+
+    <a class="category" href="#catalog" data-category-link="vintage">
+      <img
+        src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80"
+        alt="Vintage jacket">
+      <div class="category-info">
+        <span>Reworked Apparel</span>
+        <h3>Vintage Jackets ↗</h3>
+      </div>
+    </a>
+
+    <a class="category" href="#catalog" data-category-link="jeans">
+      <img
+        src="https://images.unsplash.com/photo-1548883354-94bcfe321cbb?auto=format&fit=crop&w=800&q=80"
+        alt="Fashion denim">
+      <div class="category-info">
+        <span>Streetwear Essentials</span>
+        <h3>Y2K Denim ↗</h3>
+      </div>
+    </a>
+
+    <a class="category" href="#catalog" data-category-link="vintage">
+      <img
+        src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=800&q=80"
+        alt="Casual streetwear collection">
+      <div class="category-info">
+        <span>Curated Stock</span>
+        <h3>Vintage Bundles ↗</h3>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section class="catalog" id="catalog">
+  <div class="section-heading">
+    <div>
+      <h2>Wholesale Catalog</h2>
+      <p>Explore our collections and ask us for current stock and pricing.</p>
+    </div>
+    <span class="text-link">MOQ: 25 Pieces</span>
+  </div>
+
+  <div class="filters" aria-label="Filter products">
+    <button class="filter-btn active" data-filter="all">All Products</button>
+    <button class="filter-btn" data-filter="jeans">Baggy Jeans</button>
+    <button class="filter-btn" data-filter="embroidery">Embroidery</button>
+    <button class="filter-btn" data-filter="shorts">Shorts</button>
+    <button class="filter-btn" data-filter="vintage">Vintage</button>
+  </div>
+
+  <div class="products" id="products">
+
+    <article class="product" data-category="jeans">
+      <div class="product-image">
+        <img
+          src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=700&q=80"
+          alt="Baggy denim jeans" loading="lazy">
+        <span class="badge">BESTSELLER</span>
+      </div>
+      <div class="product-info">
+        <h3>Baggy Hip-Hop Denim Jeans</h3>
+        <p>Wide-leg streetwear · Wholesale bundle</p>
+        <div class="product-bottom">
+          <div class="price">Ask for price<small>Per-piece wholesale rate</small></div>
+          <button class="order-btn" data-product="Baggy Hip-Hop Denim Jeans">ENQUIRE ↗</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="product" data-category="embroidery">
+      <div class="product-image">
+        <img
+          src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=700&q=80"
+          alt="Embroidered streetwear denim" loading="lazy">
+        <span class="badge">CUSTOM</span>
+      </div>
+      <div class="product-info">
+        <h3>Embroidered Baggy Jeans</h3>
+        <p>Statement designs · Custom production</p>
+        <div class="product-bottom">
+          <div class="price">Ask for price<small>MOQ applies</small></div>
+          <button class="order-btn" data-product="Embroidered Baggy Jeans">ENQUIRE ↗</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="product" data-category="shorts">
+      <div class="product-image">
+        <img
+          src="https://images.unsplash.com/photo-1511196044526-5cb3bcb7071b?auto=format&fit=crop&w=700&q=80"
+          alt="Casual shorts and streetwear" loading="lazy">
+        <span class="badge">WHOLESALE</span>
+      </div>
+      <div class="product-info">
+        <h3>Baggy Hip-Hop Shorts</h3>
+        <p>Relaxed fit · Multiple designs</p>
+        <div class="product-bottom">
+          <div class="price">Ask for price<small>Bundle pricing available</small></div>
+          <button class="order-btn" data-product="Baggy Hip-Hop Shorts">ENQUIRE ↗</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="product" data-category="vintage">
+      <div class="product-image">
+        <img
+          src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=700&q=80"
+          alt="Vintage workwear jacket" loading="lazy">
+        <span class="badge">VINTAGE</span>
+      </div>
+      <div class="product-info">
+        <h3>Reworked Vintage Jackets</h3>
+        <p>Selected stock · Bundle enquiries</p>
+        <div class="product-bottom">
+          <div class="price">Ask for price<small>Stock varies</small></div>
+          <button class="order-btn" data-product="Reworked Vintage Jackets">ENQUIRE ↗</button>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section class="wholesale" id="about">
+  <div>
+    <div class="eyebrow">For Resellers & Independent Stores</div>
+    <h2>Built for your next best-selling collection.</h2>
+    <p>
+      We work with resellers, vintage shops and independent fashion
+      businesses looking for distinctive denim and streetwear.
+      Start with a wholesale bundle and discuss custom designs for
+      future orders.
+    </p>
+    <div class="hero-buttons">
+      <a href="#contact" class="btn btn-light">Discuss Your Order ↗</a>
+    </div>
+  </div>
+
+  <div class="wholesale-points">
+    <div class="point">
+      <div>01</div>
+      <div>
+        <b>Wholesale Bundles</b>
+        <span>Minimum order starts at 25 pieces.</span>
+      </div>
+    </div>
+    <div class="point">
+      <div>02</div>
+      <div>
+        <b>Custom Embroidery</b>
+        <span>Discuss available designs and production options.</span>
+      </div>
+    </div>
+    <div class="point">
+      <div>03</div>
+      <div>
+        <b>International Buyers</b>
+        <span>Contact us to confirm delivery and shipping costs.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="section-heading">
+    <div>
+      <h2>Explore Our Collections</h2>
+      <p>Ask for current stock videos, available designs and custom options.</p>
+    </div>
+  </div>
+
+  <div class="gallery-grid">
+    <div class="gallery-card">
+      <div class="icon">✳</div>
+      <h3>Embroidery Designs</h3>
+      <p>Request our latest embroidery design gallery and ask which styles are available.</p>
+    </div>
+
+    <div class="gallery-card">
+      <div class="icon">▶</div>
+      <h3>Stock Videos</h3>
+      <p>Contact us for current stock videos before confirming your wholesale order.</p>
+    </div>
+
+    <div class="gallery-card">
+      <div class="icon">✦</div>
+      <h3>Custom Production</h3>
+      <p>Discuss your design, size mix, quantity and estimated production timeline.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="eyebrow">Let's Work Together</div>
+  <h2>Ready to stock Urban Loops?</h2>
+  <p>
+    Tell us which products you need, your quantity and destination.
+    We'll discuss availability, wholesale pricing and shipping.
+  </p>
+
+  <a class="whatsapp" id="mainWhatsapp" href="#" target="_blank" rel="noopener">
+    Chat on WhatsApp ↗
+  </a>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="brand-name">URBAN LOOPS</div>
+      <div class="footer-note">A Zamzam Vintage wholesale collection.</div>
+    </div>
+
+    <div class="footer-links">
+      <a href="#categories">Categories</a>
+      <a href="#catalog">Catalog</a>
+      <a href="#about">Wholesale</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+
+  <div class="copyright">
+    © <span id="year"></span> Urban Loops · Wholesale Streetwear & Denim.
+  </div>
+</footer>
+
+<script>
+/*
+  IMPORTANT:
+  Replace this placeholder with your real WhatsApp number.
+  Use international format without +, spaces or dashes.
+  Example: 923001234567
+*/
+const WHATSAPP_NUMBER = "923XXXXXXXXX";
+
+function whatsappLink(message) {
+  const number = WHATSAPP_NUMBER.replace(/\D/g, "");
+
+  if (!number || number.includes("XXXXXXXXX")) {
+    alert("WhatsApp number ابھی ویب سائٹ میں شامل کرنا باقی ہے۔");
+    return null;
+  }
+
+  return "https://wa.me/" + number +
+    "?text=" + encodeURIComponent(message);
+}
+
+document.getElementById("mainWhatsapp").addEventListener("click", function(e) {
+  e.preventDefault();
+
+  const link = whatsappLink(
+    "Hello Urban Loops! I am interested in your wholesale catalog. Please share current stock, prices and shipping details."
+  );
+
+  if (link) window.open(link, "_blank", "noopener");
+});
+
+document.querySelectorAll(".filter-btn").forEach(function(button) {
+  button.addEventListener("click", function() {
+    document.querySelectorAll(".filter-btn").forEach(function(item) {
+      item.classList.remove("active");
+    });
+
+    button.classList.add("active");
+
+    const filter = button.dataset.filter;
+
+    document.querySelectorAll(".product").forEach(function(product) {
+      product.hidden =
+        filter !== "all" && product.dataset.category !== filter;
+    });
+  });
+});
+
+document.querySelectorAll("[data-category-link]").forEach(function(link) {
+  link.addEventListener("click", function() {
+    const category = link.dataset.categoryLink;
+
+    document.querySelectorAll(".filter-btn").forEach(function(button) {
+      button.classList.toggle(
+        "active",
+        button.dataset.filter === category
+      );
+    });
+
+    document.querySelectorAll(".product").forEach(function(product) {
+      product.hidden = product.dataset.category !== category;
+    });
+  });
+});
+
+document.querySelectorAll(".order-btn").forEach(function(button) {
+  button.addEventListener("click", function() {
+    const product = button.dataset.product;
+
+    const message =
+      "Hello Urban Loops! I am interested in: " + product +
+      ". Please share wholesale pricing, MOQ, available designs and shipping details.";
+
+    const link = whatsappLink(message);
+
+    if (link) window.open(link, "_blank", "noopener");
+  });
+});
+
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
